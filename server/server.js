@@ -9,6 +9,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+  res.send("Server running!");
+});
+
 app.post("/api/contact", async (req, res) => {
   const { firstName, lastName, email, phone, message } = req.body;
 
