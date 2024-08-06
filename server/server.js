@@ -46,12 +46,10 @@ app.post("/api/contact", async (req, res) => {
       .status(200)
       .send({ success: true, message: "Message sent successfully!" });
   } catch (error) {
-    res
-      .status(500)
-      .send({
-        success: false,
-        message: "Something went wrong. Please try again later.",
-      });
+    res.status(500).send({
+      success: false,
+      message: "Something went wrong. Please try again later.",
+    });
   }
 });
 
