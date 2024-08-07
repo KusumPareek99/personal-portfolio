@@ -29,7 +29,10 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...");
     try {
-      const response = await axios.post("/api/contact", formDetails);
+      const response = await axios.post(
+        "https://kusum-personal-portfolio-backend.vercel.app/api/contact",
+        formDetails
+      );
       setStatus({ success: true, message: "Message sent successfully!" });
       toast.success(status.message);
     } catch (error) {
