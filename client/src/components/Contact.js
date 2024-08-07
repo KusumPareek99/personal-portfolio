@@ -37,7 +37,6 @@ export const Contact = () => {
 
       setStatus({ success: true, message: "Message sent successfully!" });
       toast.success(status.message);
-      console.log(response);
     } catch (error) {
       setStatus({
         success: false,
@@ -47,7 +46,7 @@ export const Contact = () => {
       toast.error(status.message);
     }
     setButtonText("Send");
-    // setFormDetails(formInitialDetails);
+    setFormDetails(formInitialDetails);
   };
 
   return (

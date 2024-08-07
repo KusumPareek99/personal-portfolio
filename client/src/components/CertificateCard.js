@@ -8,6 +8,7 @@ const CertificateCard = ({ logoUrl, certificateUrl, linkToCertificate }) => {
         style={{ textDecoration: "none", color: "white" }}
         href={linkToCertificate}
         target="_blank"
+        rel="noopener noreferrer"
       >
         <div className="card">
           <div className="card-container">

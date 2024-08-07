@@ -9,14 +9,10 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// app.use("/", (req, res) => {
-//   res.status(200);
-// });
 
 app.post("/api/contact", async (req, res) => {
-  console.log("inside post");
   const { firstName, lastName, email, phone, message } = req.body;
-  
+
   // Basic validation
   if (!firstName || !lastName || !email || !message) {
     return res

@@ -1,6 +1,5 @@
-import { Container, Row, Col } from "react-bootstrap";
-import { MailchimpForm } from "./MailchimpForm";
-import logo from "../assets/img/logo.svg";
+import { Row, Col } from "react-bootstrap";
+
 import linkedinIcon from "../assets/img/nav-icon1.svg";
 import githubIcon from "../assets/img/github-icon.svg";
 import emailIcon from "../assets/img/envelope-icon.svg";
@@ -24,15 +23,17 @@ export const Footer = () => {
             <a
               href="https://www.linkedin.com/in/kusum-p-a54759191/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img src={linkedinIcon} alt="Icon" />
             </a>
-            <a href="https://github.com/KusumPareek99" target="_blank">
+            <a href="https://github.com/KusumPareek99" target="_blank" rel="noopener noreferrer">
               <img src={githubIcon} alt="Icon" />
             </a>
             <a
               href="mailto:kusumpareek7620@gmail.com?subject=Portfolio Website"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img src={emailIcon} alt="Icon" />
             </a>

@@ -7,6 +7,7 @@ export const ProjectCard = ({ title, description, imgUrl, projectUrl }) => {
         style={{ textDecoration: "none", color: "white" }}
         href={projectUrl}
         target="_blank"
+        rel="noopener noreferrer"
       >
         <div className="proj-imgbx">
           <img alt="projectimage" src={imgUrl} />

@@ -106,10 +106,11 @@ export const NavBar = () => {
                 <a
                   href="https://www.linkedin.com/in/kusum-p-a54759191/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <img src={linkedinIcon} alt="linkedIn Icon" />
                 </a>
-                <a href="https://github.com/KusumPareek99" target="_blank">
+                <a href="https://github.com/KusumPareek99" target="_blank" rel="noopener noreferrer">
                   <img src={githubIcon} alt="Github Icon" />
                 </a>
               </div>
