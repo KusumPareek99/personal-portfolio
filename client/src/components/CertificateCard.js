@@ -13,11 +13,11 @@ const CertificateCard = ({ logoUrl, certificateUrl, linkToCertificate }) => {
         <div className="card">
           <div className="card-container">
             <div className="card-face front-face">
-              <img src={certificateUrl} alt="certificate" />
+              <img src={certificateUrl} alt="certificate" loading="lazy" />
             </div>
             <div className="card-face back-face">
               <div className="container-certificate">
-                <img src={logoUrl} alt="org logo" />
+                <img src={logoUrl} alt="org logo" loading="lazy" />
               </div>
             </div>
           </div>

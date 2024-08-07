@@ -150,6 +150,7 @@ export const Projects = () => {
         className="background-image-right"
         alt="bgimage"
         src={colorSharp2}
+        loading="lazy"
       ></img>
     </section>
   );

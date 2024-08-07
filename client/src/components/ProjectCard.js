@@ -10,7 +10,7 @@ export const ProjectCard = ({ title, description, imgUrl, projectUrl }) => {
         rel="noopener noreferrer"
       >
         <div className="proj-imgbx">
-          <img alt="projectimage" src={imgUrl} />
+          <img alt="projectimage" src={imgUrl} loading="lazy" />
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>

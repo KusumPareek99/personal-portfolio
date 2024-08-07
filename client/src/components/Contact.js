@@ -62,6 +62,7 @@ export const Contact = () => {
                   }
                   src={contactImg}
                   alt="Contact Us"
+                  loading="lazy"
                 />
               )}
             </TrackVisibility>

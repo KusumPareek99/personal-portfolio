@@ -74,6 +74,7 @@ export const Banner = () => {
                     alt="Header Img"
                     roundedCircle
                     style={{ boxShadow: "0 0 100px #191970" }}
+                    loading="lazy"
                   />
                 </div>
               )}
