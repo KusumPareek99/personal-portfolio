@@ -28,13 +28,16 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
+
     try {
       const response = await axios.post(
         "https://kusum-personal-portfolio-backend.vercel.app/api/contact",
         formDetails
       );
+
       setStatus({ success: true, message: "Message sent successfully!" });
       toast.success(status.message);
+      console.log(response);
     } catch (error) {
       setStatus({
         success: false,
@@ -44,6 +47,7 @@ export const Contact = () => {
       toast.error(status.message);
     }
     setButtonText("Send");
+    // setFormDetails(formInitialDetails);
   };
 
   return (

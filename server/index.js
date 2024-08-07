@@ -9,13 +9,14 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.use("/", (req, res) => {
-  res.send("Server running!");
-});
+// app.use("/", (req, res) => {
+//   res.status(200);
+// });
 
 app.post("/api/contact", async (req, res) => {
+  console.log("inside post");
   const { firstName, lastName, email, phone, message } = req.body;
-
+  
   // Basic validation
   if (!firstName || !lastName || !email || !message) {
     return res
@@ -48,9 +49,9 @@ app.post("/api/contact", async (req, res) => {
     await transporter.sendMail(mailOptions);
     res
       .status(200)
-      .send({ success: true, message: "Message sent successfully!" });
+      .json({ success: true, message: "Message sent successfully!" });
   } catch (error) {
-    res.status(500).send({
+    res.status(500).json({
       success: false,
       message: "Something went wrong. Please try again later.",
     });
